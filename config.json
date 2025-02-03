@@ -1,0 +1,12 @@
+{
+  "initial_setup": {
+    "base_url": "https://store.steampowered.com",
+    "browser": "chrome",
+    "wait_time": 10
+  },
+
+  "options": {
+    "type": "--incognito",
+    "window-size": "--start-maximized"
+  }
+}

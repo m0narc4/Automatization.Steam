@@ -1,0 +1,16 @@
+{
+    "data": {
+        "test_case2": {
+            "OS": "Linux",
+            "number of players": "LAN Co-op",
+            "tag": "Action"
+        },
+
+        "test_case3": {
+            "game": "Dota 2",
+            "hero": "Lifestealer",
+            "rarity": "Immortal",
+            "search_text": "golden"
+        }
+    }
+}
