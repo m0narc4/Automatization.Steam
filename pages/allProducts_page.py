@@ -4,6 +4,8 @@ from selenium.webdriver.support import expected_conditions as EC
 from base.base import BasePage
 from data_loader import DataLoader
 
+from Game import Game
+
 
 class AllProductsPage(BasePage):
     __SEARCH_RESULT_TABLE = (By.ID, "search_result_container")
@@ -31,6 +33,8 @@ class AllProductsPage(BasePage):
 
     TAG = 'div'
     UNIQUE_TEXT = 'All Products'
+
+
 
     def __make_sidebar_xpath(self, sidebar_str):
         return (By.XPATH, f"//div[contains(@class,'block search_collapse_block')]//div[contains(text(), '{sidebar_str}')]/../..")
@@ -78,6 +82,7 @@ class AllProductsPage(BasePage):
         price = self.find_element(self.__FIRST_GAME_PRICE).text
         price = price + '.'
         return price
+
 
     def get_games_count(self):
         games_count = self.find_element(self.__GAMES_COUNT).text

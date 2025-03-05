@@ -4,7 +4,7 @@ from pages.allProducts_page import AllProductsPage
 from pages.firstGame_page import FirstGamePage
 
 
-def test():
+def test_Topsellers():
     main_page = MainPage()
     main_page.open()
     assert main_page.is_opened() is True, "Страница не открылась"

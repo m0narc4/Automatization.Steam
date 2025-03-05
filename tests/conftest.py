@@ -4,7 +4,7 @@ from SingletonMeta import SeleniumDriver
 
 @pytest.fixture(scope='function', autouse=True)
 def browser():
-    driver = SeleniumDriver().get_driver()
-    yield driver
-    SeleniumDriver.quit(driver)
+    SeleniumDriver().get_driver()
+    yield SeleniumDriver().get_driver()
+    SeleniumDriver.quit(SeleniumDriver().get_driver())
 

@@ -2,7 +2,7 @@ from pages.main_page import MainPage
 from pages.tradingPlatform_page import TradingPlatformPage
 
 
-def test():
+def test_TradingPlatform():
     main_page = MainPage()
     main_page.open()
     assert main_page.is_opened() is True, "Страница не открылась"

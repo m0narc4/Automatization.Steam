@@ -1,0 +1,8 @@
+.pytest_cache
+.idea
+venv/
+/downloads/sampleFile*
+/tests/.pytest_cache
+/README.md
+*.cache
+.python-version
